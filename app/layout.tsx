@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <ClerkProvider
           signInUrl="/sign-in"
           signUpUrl="/sign-up"
