@@ -40,8 +40,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# convex generated (auto-created by `npx convex dev`)
-convex/_generated/
+# convex generated files are committed so Vercel can build without Convex CLI
+# convex/_generated/
 
 # keep env example, ignore actual secrets
 !.env.local.example
