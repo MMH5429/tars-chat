@@ -39,7 +39,7 @@ export default function HomePage() {
         <Sidebar
           selectedConversationId={selectedConversationId}
           onSelectConversation={handleSelectConversation}
-          currentUser={currentUser}
+          currentUser={currentUser ?? null}
         />
       </div>
 
