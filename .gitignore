@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# convex generated (auto-created by `npx convex dev`)
+convex/_generated/
+
+# keep env example, ignore actual secrets
+!.env.local.example
