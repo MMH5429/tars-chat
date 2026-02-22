@@ -20,9 +20,7 @@ export function usePresence() {
     }, 30000);
 
     const handleVisibilityChange = () => {
-      if (document.visibilityState === "visible") {
-        setOnlineStatus({ isOnline: true });
-      }
+      setOnlineStatus({ isOnline: document.visibilityState === "visible" });
     };
 
     const handleBeforeUnload = () => {

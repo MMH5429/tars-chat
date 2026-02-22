@@ -59,8 +59,10 @@ export function MessageList({
     prevLengthRef.current = newLength;
   }, [messages, isAtBottom]);
 
-  // Initial scroll to bottom
+  // Initial scroll to bottom + reset state on conversation change
   useEffect(() => {
+    setIsAtBottom(true);
+    setHasNewMessages(false);
     bottomRef.current?.scrollIntoView();
     prevLengthRef.current = messages?.length ?? 0;
   }, [conversationId]);

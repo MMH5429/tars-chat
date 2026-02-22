@@ -45,3 +45,6 @@ convex/_generated/
 
 # keep env example, ignore actual secrets
 !.env.local.example
+
+# accidental sub-project
+clerk-nextjs/
